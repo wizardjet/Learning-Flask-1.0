@@ -1,7 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
     {% for person in persons %}
-        <h1>{{  person.name }}</h1>
-        <p>{{ person.age }}</p>
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="#">{{ person.email }}</a>
+                <small class="text-muted">{{ person.membership }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ person.name }}</a></h2>
+            <p class="article-content">{{ person.course }}</p>
+        </div>
+    </article>
     {% endfor %}
 {% endblock content %}

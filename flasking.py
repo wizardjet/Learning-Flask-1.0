@@ -1,22 +1,32 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 persons = [
     {
         "name": "Kirsty",
-        "age": "15"
+        "email": "kc123",
+        "course": "Computer Science",
+        "membership": "Yes"
     }, {
         "name": "Josephina",
-        "age": "21"
+        "email": "dd22",
+        "course": "Computer Science",
+        "membership": "Yes"
     }, {
         "name": "Ellie",
-        "age": "18"
+        "email": "dwad22",
+        "course": "Computer Science",
+        "membership": "Yes"
     }, {
         "name": "Timothy",
-        "age": "3"
+        "email": "hh55",
+        "course": "Computer Science",
+        "membership": "Yes"
     }, {
         "name": "Sabrina",
-        "age": "21"
+        "email": "jj8",
+        "course": "Computer Science",
+        "membership": "Yes"
     }
 ]
 
