@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            {% if title %}
+                <title>
+                    SMIG app - {{ title }}
+                </title>
+            {% else %}
+                <title>
+                    SMIG app
+                </title>
+            {% endif %}
+    </head>
+    <body>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
