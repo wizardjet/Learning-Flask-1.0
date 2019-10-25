@@ -1,1 +1,4 @@
 flask==1.0.2
+flask-wtf==0.14
+wtforms==2.2.1
+flask-sqlalchemy>=2.4.1
